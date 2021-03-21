@@ -7,14 +7,14 @@ Example of usage of some functions:
 
 ```GDScript
 var original_float : float  = 65504     # (2 − 2^(−10)) * 2^15
-var fp16 			        = SmallerFloats.float_to_fp16_as_int(original_float)
-var fp32_from_fp16 	        = SmallerFloats.fp16_as_int_to_float(fp16)
+var fp16                    = SmallerFloats.float_to_fp16_as_int(original_float)
+var fp32_from_fp16          = SmallerFloats.fp16_as_int_to_float(fp16)
 
 print("Original Float 32: %f\nFloat 16 as integer: %d\nFloat 16 back to Float 32: %f" % [original_float, fp16, fp32_from_fp16])
 
 original_float      = 16776704      # (2 − 2^(−14)) * 2^23
-var fp24 			= SmallerFloats.float_to_fp24_as_int(original_float)
-var fp32_from_fp24 	= SmallerFloats.fp24_as_int_to_float(fp24)
+var fp24            = SmallerFloats.float_to_fp24_as_int(original_float)
+var fp32_from_fp24  = SmallerFloats.fp24_as_int_to_float(fp24)
 
 print("Original Float 32: %f\nFloat 24 as integer: %d\nFloat 24 back to Float 32: %f" % [original_float, fp24, fp32_from_fp24])
 ```
